@@ -34,7 +34,6 @@ wisecow/
 │   ├── system_health.sh
 │   └── app_health_check.sh
 ├── Dockerfile
-├── wisecow.sh
 └── README.md
 
 ````
