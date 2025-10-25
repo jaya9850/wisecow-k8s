@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wisecow
+  labels:
+    app: wisecow
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wisecow
+  template:
+    metadata:
+      labels:
+        app: wisecow
+    spec:
+      containers:
+      - name: wisecow
+        image: pratiksha9850/wisecow:latest   
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 4499
+        livenessProbe:
+          exec:
+            command: ["pgrep", "bash"]
+          initialDelaySeconds: 10
+          periodSeconds: 20
+        readinessProbe:
+          exec:
+            command: ["pgrep", "bash"]
+          initialDelaySeconds: 5
+          periodSeconds: 10
