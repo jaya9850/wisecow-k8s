@@ -1,9 +1,4 @@
-Perfect 👍 Here’s a **simplified, clean, copy-paste-ready version** of your **README.md** — fully formatted and complete from scratch.
-Just copy everything below and paste it directly into your `README.md` file on GitHub.
 
----
-
-```markdown
 # 🐮 Wisecow – DevOps Practical Assessment (Accuknox 2025)
 
 ## 📘 Overview
