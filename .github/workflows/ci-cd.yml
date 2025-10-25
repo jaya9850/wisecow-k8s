@@ -5,7 +5,7 @@ on:
     branches: [ main, master ]
 
 env:
-  IMAGE_NAME: yourdockerhubuser/wisecow   # <- replace
+  IMAGE_NAME: pratiksha9850/wisecow   
 
 jobs:
   build-and-push:
