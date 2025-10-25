@@ -56,13 +56,13 @@ CMD ["./wisecow.sh"]
 ### 2️⃣ Build Image
 
 ```bash
-docker build -t <your-dockerhub-username>/wisecow:latest .
+docker build -t pratiksha9850/wisecow:latest .
 ```
 
 ### 3️⃣ Test Locally
 
 ```bash
-docker run --rm -it <your-dockerhub-username>/wisecow:latest
+docker run --rm -it pratiksha9850/wisecow:latest
 ```
 
 ---
@@ -80,7 +80,7 @@ minikube addons enable ingress
 
 ```bash
 eval $(minikube -p minikube docker-env)
-docker build -t <your-dockerhub-username>/wisecow:latest .
+docker build -t pratiksha9850/wisecow:latest .
 ```
 
 ### 3️⃣ Apply Manifests
