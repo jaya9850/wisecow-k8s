@@ -17,7 +17,7 @@ spec:
       containers:
       - name: wisecow
         image: pratiksha9850/wisecow:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         ports:
         - containerPort: 4499
         livenessProbe:
