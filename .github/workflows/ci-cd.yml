@@ -1,4 +1,4 @@
-name:  Build & Push Wisecow Docker Image
+name: Build & Push Wisecow Docker Image
 
 on:
   push:
@@ -29,3 +29,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: pratiksha9850/wisecow:latest
+
+      - name: ✅ Print Success Message
+        run: echo "Docker image built and pushed successfully to Docker Hub!"
